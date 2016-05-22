@@ -19,6 +19,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
+	url(r'^photo/upload/$', 'photo.views.new_photo', name='new_photo'),
     url(r'^photo/(?P<photo_id>\d+)$', 'photo.views.single_photo', name='view_single_photo'),
     url(r'^admin/', admin.site.urls),
 ]
