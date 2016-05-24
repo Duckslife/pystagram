@@ -3,7 +3,6 @@
 {% block content %}
 <form
     method="POST"
-<<<<<<< HEAD
     action="{% url 'new_photo' %}"
     enctype="multipart/form-data"
 >
@@ -30,22 +29,11 @@
     {% endfor %}
     {% endcomment %}
 
-=======
 
-    action="{% url 'new_photo' %}"
 
-    enctype="multipart/form-data"
->
-    {% csrf_token %}
-    {{form.as_p}}
-
->>>>>>> 8d2df5ad6ab5489faaab54f4fe92e4a424601117
     <p>
         <input type="submit" />
     </p>
 </form>
-<<<<<<< HEAD
-=======
 
->>>>>>> 8d2df5ad6ab5489faaab54f4fe92e4a424601117
 {% endblock %}
