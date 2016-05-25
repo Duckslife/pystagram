@@ -23,6 +23,8 @@ from django.contrib.auth.views import logout
 import photo.views
 import django
 import photo.index
+from profiles.urls import urlpatterns as profile_urls
+
 
 urlpatterns = [
 	url(r'^$',photo.index.index, name = 'index'),
@@ -31,6 +33,7 @@ urlpatterns = [
 	url(r'^photo/upload/$', photo.views.new_photo, name='new_photo'),
     url(r'^photo/(?P<photo_id>\d+)$', photo.views.single_photo, name='view_single_photo'),
     url(r'^admin/', admin.site.urls),
+	url(r'^user/',include(profile_urls, namespace='profiles')),
 ]
 if settings.DEBUG:
 	urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

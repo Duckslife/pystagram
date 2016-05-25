@@ -1,0 +1,15 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+{{current_user}}profile page
+<ul>
+{#{% for photo in current_user.photo_set.all %}#}
+{% for photo in photos %}
+	<li><img src="{{photo.image_file.url}}"/></li>
+{% empty %}
+	<li>no image upload!</li>
+{% endfor %}
+</ul>
+
+{% endblock%}
