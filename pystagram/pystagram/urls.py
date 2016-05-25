@@ -22,9 +22,10 @@ from django.contrib.auth.views import login
 from django.contrib.auth.views import logout
 import photo.views
 import django
-
+import photo.index
 
 urlpatterns = [
+	url(r'^$',photo.index.index, name = 'index'),
 	url(r'^accounts/login',django.contrib.auth.views.login, name = 'login',kwargs={'template_name':'login.html'}),
 	url(r'^accounts/logout',django.contrib.auth.views.logout, name = 'logout'),
 	url(r'^photo/upload/$', photo.views.new_photo, name='new_photo'),
