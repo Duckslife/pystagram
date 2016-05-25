@@ -5,6 +5,9 @@ from django.http import HttpResponse
 from photo.models import Photo
 from .models import Photo
 from photo.forms import PhotoEditForm
+from django.contrib.auth.decorators import login_required
+
+
 
 def single_photo(request, photo_id):
 	photo = get_object_or_404(Photo, pk=photo_id)
@@ -18,6 +21,7 @@ def single_photo(request, photo_id):
 		)
 	)
 
+@login_required
 def new_photo(request):
 	if request.method =="GET":
 		edit_form = PhotoEditForm()
@@ -25,8 +29,10 @@ def new_photo(request):
 		edit_form = PhotoEditForm(request.POST, request.FILES)
 
 		if edit_form.is_valid():
-			new_photo = edit_form.save()
-
+			new_photo = edit_form.save(commit=False)
+			new_photo.user = request.user
+			new_photo.save()
+		
 			return redirect (new_photo.get_absolute_url())
 
 	return render(

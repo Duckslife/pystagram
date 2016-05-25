@@ -6,7 +6,10 @@ from django.db import models
 
 from django.core.urlresolvers import reverse_lazy
 
+from django.conf import settings
+
 class Photo(models.Model):
+	user = models.ForeignKey(settings.AUTH_USER_MODEL)
 	image_file = models.ImageField(upload_to='%Y/%m/%d')
 	filtered_image_file = models.ImageField(null=True , upload_to='static_files/uploaded/filtered/%Y/%m/%d')
 	discription = models.TextField(max_length=500, blank=True)

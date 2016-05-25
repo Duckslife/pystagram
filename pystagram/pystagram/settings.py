@@ -122,7 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/assets/'
-
+#STATIC_URL = '/static/'
 
 MEDIA_URL = '/uploads/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploaded_files')
@@ -133,6 +133,9 @@ STATICFILES_DIRS = (
 )
 
 STATIC_ROOT = os.path.join(BASE_DIR,'collected_statics')
+
+LOGIN_REDIRECT_URL='/photo/upload'
+
 """
 TEMPLATE_DIRS = (
 	os.path.join(BASE_DIR,'templates'),
