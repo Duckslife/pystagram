@@ -15,6 +15,11 @@
         <mark key="^" line="9" column="34" />
         <mark key="." line="9" column="34" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/ormtest/manage.py" timestamp="1465272074870">
+        <mark key="[" line="6" column="0" />
+        <mark key="]" line="6" column="0" />
+        <mark key="." line="6" column="0" />
+      </file>
       <file name="$USER_HOME$/PycharmProjects/pystagram/pystagram/templates/layout.html" timestamp="1465270841604" />
       <file name="$USER_HOME$/PycharmProjects/pystagram/pystagram/photo/views.py" timestamp="1464026699647">
         <mark key="[" line="4" column="30" />
@@ -25,6 +30,12 @@
     </filemarks>
     <jumps />
     <registers>
+      <register name="1" type="2">
+        <text encoding="base64">CiAgICBmcm9tIGRqYW5nby5jb3JlLm1hbmFnZW1lbnQgaW1wb3J0IGV4ZWN1dGVfZnJvbV9jb21tYW5kX2xpbmUK</text>
+      </register>
+      <register name="&quot;" type="2">
+        <text encoding="base64">CiAgICBmcm9tIGRqYW5nby5jb3JlLm1hbmFnZW1lbnQgaW1wb3J0IGV4ZWN1dGVfZnJvbV9jb21tYW5kX2xpbmUK</text>
+      </register>
       <register name=":" type="4">
         <text>w</text>
       </register>
