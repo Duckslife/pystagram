@@ -3,7 +3,7 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1465402096849">
+      <file name="/Dummy.txt" timestamp="1465403354302">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/pystagram/pystagram/photo/models.py" timestamp="1464026275822">
@@ -29,6 +29,7 @@
         <mark key="^" line="4" column="29" />
         <mark key="." line="4" column="29" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/duckslife/duckslife/urls.py" timestamp="1465403330295" />
     </filemarks>
     <jumps />
     <registers>
